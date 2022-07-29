@@ -1,0 +1,618 @@
+<html>
+<head>
+	<title></title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+	<meta content="utf-8" http-equiv="encoding" />
+</head>
+<body style="font-family:Arial">
+<style type="text/css">@font-face {
+      font-family: Arial;
+      src: url(SourceSansPro-Regular.ttf);
+      font-family: Arial;
+      }
+      .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+      a {
+      color: #1B9BB8;
+      text-decoration: none;
+      }
+      {
+      color: #555555;
+      background: #FFFFFF;
+      font-size: 14px;
+      font-family: SourceSansPro;
+      }
+      #header {
+      padding: 10px 0;
+      margin-bottom: 0px;
+      border-bottom: 1px solid #AAAAAA;
+      }
+      #logo {
+      float: left;
+      margin: 0px;
+      width: 250px;
+      }
+      #logo img {
+      height: 70px;
+      }
+      #company {
+      float: left;
+      text-align: left;
+      width: 350px;
+      }
+      #details {
+      margin-bottom: 15px;
+      padding-top: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+      overflow: hidden;
+      }
+      #client {
+      padding-left: 6px;
+      border-left: 6px solid #1B9BB8;
+      float: left;
+      width: 420px;
+      }
+      #client2 {
+      padding-left: 6px;
+      border-left: 6px solid #BDB9B9;
+      ;
+      float: left;
+      width: 420px;
+      }
+      #client .to {
+      color: #939598;
+      }
+      #client2 .to {
+      color: black;
+      }
+      h2.name {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin: 0;
+      }
+      #invoice {
+      float: right;
+      text-align: right;
+      }
+      #invoice2 {
+      float: right;
+      text-align: right;
+      }
+      #invoice h1,
+      h1 {
+      float: right;
+      color: #1B9BB8;
+      font-size: 2em;
+      line-height: 2.2em;
+      font-weight: bold;
+      margin: 0px;
+      padding: 0px;
+      }
+      #invoice2 h1,
+      h1 {
+      float: right;
+      color: #1B9BB8;
+      font-size: 2em;
+      line-height: 2.2em;
+      font-weight: bold;
+      margin: 0px;
+      padding: 0px;
+      }
+      #invoice .info {
+      font-size: 0.8em;
+      }
+      #invoice2 .info {
+      font-size: 0.8em;
+      }
+      table.payer {
+      font-size: 18px;
+      width: 300px;
+      float: left;
+      }
+      table.info_alex,
+      table.order_info {
+      float: right;
+      width: 365px;
+      }
+      table.info_alex td:first-child,
+      table.order_info td:first-child {
+      width: 150px;
+      }
+      .detail-row {
+      margin-bottom: 40px;
+      overflow: hidden
+      }
+      #pdf_tag {
+      font-size: 1.1em;
+      margin: 30px 0px 15px 0px;
+      }
+      #notices {
+      padding-left: 6px;
+      border-left: 6px solid #1B9BB8;
+      }
+      #notices .notice {
+      font-size: 1.2em;
+      }
+      .footer,
+      .footer td {
+      background-color: #FFFFFF;
+      color: #939598;
+      border: none;
+      border-top: 1px solid #AAAAAA;
+      font-size: 0.9em;
+      padding: 10px 0;
+      }
+      .header,
+      .header td {
+      background-color: #FFFFFF;
+      border: none;
+      border-bottom: 1px solid #AAAAAA;
+      margin: 0px;
+      padding: 0px;
+      }
+      .logo {
+      text-align: right;
+      }
+      .left-table {
+      width: 250px;
+      float: left;
+      }
+      .right-table {
+      width: 220px;
+      float: right;
+      margin-bottom: 20px;
+      }
+      .firsttd {
+      width: 30%;
+      }
+      .t10 {
+       font-size:10px;
+			 line-height: 1.15
+      }
+      .t11 {
+       font-size:11px;
+			 line-height: 1.15;
+      }
+      .t12 {
+       font-size:12px;
+			 line-height: 1.15;
+      }
+			.t13 {
+			 font-size:13px;
+			 line-height: 1.15;
+			}
+      .t14 {
+       font-size:14px;
+      }
+      .t15 {
+       font-size:15px;
+      }
+      .t16 {
+        font-size:16px;
+      }
+      .t18 {
+        font-size:18px;
+      }
+</style>
+<div id="details" style="margin-bottom:0px;padding-left:0;padding-top:0">
+<div class="logo" style="padding-right:20px"><img alt="" src="https://smartoffice.alex-reisen.de/test/upload/images/alexreis.jpg" style="width:195px;hight:195px" /></div>
+
+<p class="t10">$COMPANY_NAME$ &bull; $COMPANY_ADDRESS$ &bull; $COMPANY_ZIP$ $COMPANY_CITY$</p>
+
+<div class="left-table"><!-- Table 1 -->
+<table border="" class="t12"  style="margin-top:49.317149px">
+	<tbody>
+		<tr>
+			<td >$R_CONTACT_ID_CF_2030$</td>
+		</tr>
+		<tr>
+			<td>$R_CONTACT_ID_FIRSTNAME$&nbsp;$R_CONTACT_ID_LASTNAME$</td>
+		</tr>
+		<tr>
+			<td>$R_CONTACT_ID_MAILINGSTREET$</td>
+		</tr>
+		<tr>
+			<td>$R_CONTACT_ID_MAILINGZIP$&nbsp;$R_CONTACT_ID_MAILINGCITY$</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="right-table" style="clear:right;"><!-- Table 2 -->
+<table border="" class="t10">
+	<tbody>
+		<tr>
+			<td colspan="2" style="font-weight: bold;font-size:12.5px;">AL.EX Reiseservice</td>
+		</tr>
+		<tr>
+			<td style="width:100px;">Stra&szlig;e</td>
+			<td style="font-size:11px">M&ouml;nckebergstr. 19</td>
+		</tr>
+		<tr>
+			<td>PLZ, Ort</td>
+			<td style="font-size:11px">20095 Hamburg</td>
+		</tr>
+		<tr>
+			<td>Telefon</td>
+			<td style="font-size:11px">+49 40 38 08 70 9-0</td>
+		</tr>
+		<tr>
+			<td>Telefax</td>
+			<td style="font-size:11px">+49 40 38 08 70 913</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td style="font-size:11px">info@alex-reisen.de</td>
+		</tr>
+		<tr>
+			<td>Internet</td>
+			<td style="font-size:11px">www.alex-reisen.de</td>
+		</tr>
+	</tbody>
+</table>
+<!-- table 2:1 -->
+
+<table class="t10">
+	<tbody>
+		<tr>
+			<td style="width:33px;">IBAN</td>
+			<td>$COMPANY_ENTREPRENEURREG$</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div style="clear:right; margin-bottom:0px;"><!-- Table 3 -->
+<table border="" class="t11">
+	<tbody>
+		<tr>
+			<td rowspan="8" style="font-weight:bold;font-size:12.5px" valign="bottom" width="408px">RECHNUNG/BEST&Auml;TIGUNG</td>
+			<td style="width:100px">Kundennr</td>
+			<td>$R_CONTACT_ID_CONTACT_NO$</td>
+		</tr>
+		<tr>
+			<td>Buchungsnr</td>
+			<td>$POTENTIALS_POTENTIAL_NO$</td>
+		</tr>
+		<tr>
+			<td>Bearbeiter</td>
+			<td>$USERS_USER_NAME$&nbsp;$USERS_LAST_NAME$</td>
+		</tr>
+		<tr>
+			<td>Buchungsdatum</td>
+			<td>[CUSTOMFUNCTION|datefmt|$POTENTIALS_CREATEDTIME$|d.m.Y|CUSTOMFUNCTION]</td>
+		</tr>
+		<tr>
+			<td>Tagesdatum</td>
+			<td>##DD.MM.YYYY##</td>
+		</tr>
+		<tr>
+			<td>Abreisedatum</td>
+			<td>[CUSTOMFUNCTION|datefmt|$POTENTIALS_CF_1637$|d.m.Y|CUSTOMFUNCTION]</td>
+		</tr>
+		<tr>
+			<td>UStID Reiseb&uuml;ro:</td>
+			<td>$COMPANY_OKPO$</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<p style="display:block;font-weight:bold;border-bottom: 1px solid #555455;padding: 0px 0;margin-top: 0px;margin-bottom: 5px;padding-bottom: 5px;" valign="top"></p>
+<!-- Table 4 -->
+
+<table border="" class="t12">
+	<tbody>
+		<tr>
+			<td class="firsttd">Reisetermin:</td>
+			<td width="40px"></td>
+			<td>[CUSTOMFUNCTION|datefmt|$POTENTIALS_CF_1637$|d.m.Y|CUSTOMFUNCTION]&nbsp;-&nbsp;[CUSTOMFUNCTION|datefmt|$POTENTIALS_CLOSINGDATE$|d.m.Y|CUSTOMFUNCTION]</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="" class="t12">
+	<tbody>
+		<tr>
+			<td>Leistung:</td>
+			<td width="60px"></td>
+			<td>&nbsp;$POTENTIALS_OPPORTUNITY_TYPE$</td>
+			<td>
+			<div><a>#RELBLOCK14_START#</a> <a>[CUSTOMFUNCTION|addToCFArray|arr1|$name$|CUSTOMFUNCTION]</a> <a>#RELBLOCK14_END#</a>[CUSTOMFUNCTION|implodeCFArray|arr1|,&nbsp;|CUSTOMFUNCTION]</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="t13" style="display:block;border-top: 1px solid #555455;margin-top: 5px;padding-top: 10px;margin-bottom: 0;">Teilnehmer/in:</p>
+
+<div id="travellers_info" style="overflow:hidden; margin-bottom: 5px;border-bottom: 1px solid #555455;">
+<div id="travellers" style="width: 400px;float:left;padding-bottom: 5px;"><!-- Table 5 --><!-- EXAMPLE
+<tr>
+ <td>
+   <ol>
+     <div>#RELBLOCK15X_START#</div>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;$salutationtype$ $lastname$, $firstname$</li>
+     <div>#RELBLOCK15X_END#</div>
+   </ol>
+ </td>
+<tr>
+-->
+<table border="" class="t12">
+	<tbody>
+		<tr>
+			<td width="";>Nr.&nbsp;&nbsp;&nbsp;Name</td>
+		</tr>
+		<tr>
+			<td>
+				<ol>
+		      <div>#RELBLOCK25_START#</div>
+		         <li>&nbsp;&nbsp;&nbsp;&nbsp;[CUSTOMFUNCTION|its4you_if|$cf_2030$|=|-||$cf_2030$|CUSTOMFUNCTION] [CUSTOMFUNCTION|its4you_if|$cf_2046$|=|-||$cf_2046$|CUSTOMFUNCTION] $lastname$, $firstname$</li>
+		      <div>#RELBLOCK25_END#</div>
+		    </ol>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div id="full_summ" style="width: 200px;float:right;text-align: right;"><!-- Table 6 -->
+<table border="" class="t13" style="margin-left: auto;">
+	<tbody>
+		<tr>
+			<td>Teilnehmerpreis</td>
+		</tr>
+		<tr>
+			<td style="text-align:left">$POTENTIALS_AMOUNT$&nbsp;EUR</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+<!-- Table 7 -->
+
+<table border="" class="t11" style="border-bottom: 1px solid #555455;padding-bottom:2px;">
+	<tbody>
+		<tr>
+			<td style="width:240px;"></td>
+			<td style="width:33px;"></td>
+			<td style="width:157px;"></td>
+			<td style="">Einzelpreis</td>
+			<td style="text-align: right;width:162px">Gesamtpreis</td>
+		</tr>
+	</tbody>
+</table>
+<!-- Table 8 -->
+
+<table border="" class="t12" style="padding-bottom: 5px;">
+	<tbody>
+		<tr>
+		</tr>
+		<tr>
+			<td style="">Leistungstr&auml;ger:</td>
+			<td colspan="4">AL.EX Reiseservice</td>
+		</tr>
+		<tr>
+			<td colspan="5">#RELBLOCK16_START#</td>
+		</tr>
+		<tr>
+			<td style="width:300px;">$name$ [CUSTOMFUNCTION|its4you_if|$description$|=|-|| "$description$" |CUSTOMFUNCTION]</td>
+			<td style="width:50px;">$service_qty$</td>
+			<td style="width:70px;">x</td>
+			<td style="width:90px;">[CUSTOMFUNCTION|its4you_NumberFormat|$service_price$|2|,|.|CUSTOMFUNCTION] EUR</td>
+			<td style="text-align:right;width:140px">[CUSTOMFUNCTION|its4you_NumberFormat|$service_amount$|2|,|.|CUSTOMFUNCTION] EUR</td>
+		</tr>
+		<tr>
+			<td colspan="5">#RELBLOCK16_END#</td>
+		</tr>
+		<tr>
+			<td>Reisetermin</td>
+			<td colspan="4">[CUSTOMFUNCTION|datefmt|$POTENTIALS_CF_1637$|d.m.Y|CUSTOMFUNCTION]&nbsp;bis&nbsp;[CUSTOMFUNCTION|datefmt|$POTENTIALS_CLOSINGDATE$|d.m.Y|CUSTOMFUNCTION]</td>
+		</tr>
+	</tbody>
+</table>
+<!-- Table 8 -->
+
+<table border="" class="t12" style="padding-bottom: 5px;">
+	<tbody>
+		<tr>
+			<td colspan="7">Flugdaten:</td>
+		</tr>
+		<tr>
+			<td>Datum</td>
+			<td></td>
+			<td>Flug-Nr</td>
+			<td></td>
+			<td>Ab</td>
+			<td></td>
+			<td>An</td>
+			<td></td>
+			<td>Von</td>
+			<td></td>
+			<td>&Uuml;ber</td>
+			<td></td>
+			<td>Nach</td>
+		</tr>
+		<tr>
+			<td colspan="13">#RELBLOCK13_START#</td>
+		</tr>
+		<tr>
+			<td>[CUSTOMFUNCTION|datefmt|$date_flight$|d.m.Y|CUSTOMFUNCTION]</td>
+			<td style="width: 30px;"></td>
+			<td>$cf_flights_id$</td>
+			<td style="width: 30px;"></td>
+			<td>$time_arrival$</td>
+			<td style="width: 30px;"></td>
+			<td>$time_departure$</td>
+			<td style="width: 30px;"></td>
+			<td><!--[CUSTOMFUNCTION|its4you_if|$mtype$|=|Туда|$cf_2026$|CUSTOMFUNCTION]-->$cf_2024$</td>
+			<td style="width: 3px;"></td>
+			<td><!--[CUSTOMFUNCTION|its4you_if|$mtype$|=|Через||CUSTOMFUNCTION]--></td>
+			<td style="width: 3px;"></td>
+			<td><!--[CUSTOMFUNCTION|its4you_if|$mtype$|=|Обрбатно|$cf_2024$|CUSTOMFUNCTION]-->$cf_2026$</td>
+		</tr>
+		<tr>
+			<td colspan="13">#RELBLOCK13_END#</td>
+		</tr>
+	</tbody>
+</table>
+<!-- Table 9 -->
+
+<table border="" class="t12" style="padding-bottom: 0px;">
+	<tbody>
+		<tr>
+			<td style="width:150px;">Bef&ouml;rderung</td>
+			<td colspan="2" style="padding-bottom:5px">&nbsp;Aeroflot / Linienflug</td>
+		</tr>
+		<tr>
+			<td style="">Transfer</td>
+			<td colspan="2">&nbsp;$R_CF_TOURS_ID_CF_2011$</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="" class="t12" style="padding-bottom: 0px;padding-top:0px">
+	<tbody>
+		<tr>
+			<td style="width:150px;">Unterkunft</td>
+			<td>
+				 <!--<div> <a>#RELBLOCK17_START#</a> <a>[CUSTOMFUNCTION|addToCFArray|arr2|&nbsp;$name$|CUSTOMFUNCTION]</a> <a>#RELBLOCK17_END#</a>[CUSTOMFUNCTION|implodeCFArray|arr2|,|CUSTOMFUNCTION]</div> -->
+					<div>#RELBLOCK17_START#</div> <a>&nbsp;$name$,</a> <div>#RELBLOCK17_END#</div>
+			</td>
+			<td>
+					[CUSTOMFUNCTION|its4you_isnull|$POTENTIALS_CF_2040$||$POTENTIALS_CF_2040$ x Einzelzimmer|CUSTOMFUNCTION][CUSTOMFUNCTION|its4you_isnull|$POTENTIALS_CF_2042$||,|CUSTOMFUNCTION][CUSTOMFUNCTION|its4you_isnull|$POTENTIALS_CF_2042$||&nbsp;$POTENTIALS_CF_2042$ x Doppelzimmer|CUSTOMFUNCTION]
+			</td>
+		</tr>
+</tbody>
+</table>
+
+<!-- list hotel
+<table border="" class="t11" style="padding-bottom: 0px;padding-top:0px">
+	<tbody>
+		<tr>
+			<td style="width:150px;">Unterkunft</td>
+			<td><! Table 9:1
+			<table border="" style="padding-bottom:0px">
+				<tbody>
+					<tr>
+						<td>#RELBLOCK17_START#</td>
+					</tr>
+					<tr>
+						<td>$name$</td>
+					</tr>
+					<tr>
+						<td>#RELBLOCK17_END#</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td>
+			[CUSTOMFUNCTION|its4you_isnull|$POTENTIALS_CF_2040$||$POTENTIALS_CF_2040$ EZZ|CUSTOMFUNCTION][CUSTOMFUNCTION|its4you_isnull|$POTENTIALS_CF_2042$||&nbsp;$POTENTIALS_CF_2042$ DZZ|CUSTOMFUNCTION]
+		</td>
+		</tr>
+</tbody>
+</table>
+END -->
+
+<table border="" class="t12" style="padding-bottom: 0px;padding-top:0px">
+	<tbody>
+		<tr>
+			<td style="width:150px;">Leistung</td>
+			<td colspan="2">[CUSTOMFUNCTION|its4you_if|$R_CF_TOURS_ID_CF_2048$|=||#HIDETR#|&nbsp;$R_CF_TOURS_ID_CF_2048$|CUSTOMFUNCTION]</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="" class="t12" style="padding-bottom: 0px;padding-top:0px">
+	<tbody>
+		<tr>
+			<td style="width:150px;">Zusatzleistung</td>
+			<td colspan="2">[CUSTOMFUNCTION|its4you_if|$R_CF_TOURS_ID_CF_2050$|=||#HIDETR#|&nbsp;$R_CF_TOURS_ID_CF_2050$&nbsp;$R_CF_TOURS_ID_CF_2052$|CUSTOMFUNCTION]</td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="" class="t12" style="padding-bottom: 0px;padding-top:0px">
+	<tbody>
+		<tr>
+			<td style="width:150px;">Sonstiges</td>
+			<td colspan="2">&nbsp;Programm (inkl.) wie folgt:</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<div style="page-break-after: always;"><span style="display: none;">&nbsp;</span></div>
+
+<p class="t11" style="padding-bottom: 0px;padding-top:0px">[CUSTOMFUNCTION|its4you_if|$POTENTIALS_CF_2028$|=|Ja|$R_CF_TOURS_ID_CF_1910$|$R_CF_TOURS_ID_DESCRIPTION$|CUSTOMFUNCTION]</p>
+<!-- Table 10 -->
+
+<table border="" class="t11" style="padding-bottom: 0px;padding-top:0px">
+	<tbody>
+		<tr>
+			<td colspan="1" style="width:540px;">Bitte zahlen Sie wie folgt:</td>
+		</tr>
+		<tr>
+			<td>Gesamtbetrag, zahlbar an Reiseb&uuml;r</td>
+			<td style="width:100px;text-align:right">$POTENTIALS_AMOUNT$&nbsp;EUR</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="display:block;font-weight:bold;border-bottom: 1px solid #555455;padding: 0px 0;margin-top: 0px;margin-bottom: 5px;padding-bottom: 10px;" valign="top"></p>
+<!-- Table 11 -->
+
+<table border="" class="t11" style="padding-bottom: 0px;">
+	<tbody>
+		<tr>
+			<td style="width:540px;">Anzahlung(en) erhalten</td>
+			<td style="width:100px;text-align:right">0,00 EUR</td>
+		</tr>
+		<tr>
+			<td>Anzahlung Buch.Nr. 21676 zahlbar gleich nach Rechnungserhalt</td>
+			<td style="text-align:right">[CUSTOMFUNCTION|its4you_multiplication|$POTENTIALS_AMOUNT$|0,2|CUSTOMFUNCTION]&nbsp;EUR</td>
+		</tr>
+		<tr>
+			<td>Restzahlung Buch.Nr. 21676 zahlbar bis: [CUSTOMFUNCTION|datefmt|$POTENTIALS_CF_2058$|d.m.Y|CUSTOMFUNCTION]</td>
+			<td style="text-align:right"><span style="text-align: right;">[CUSTOMFUNCTION|its4you_multiplication|$POTENTIALS_AMOUNT$|0,8|CUSTOMFUNCTION]</span> EUR</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="display:block;font-weight:bold;border-bottom: 1px solid #555455;padding: 0px 0;margin-top: 0px;margin-bottom: 5px;padding-bottom: 10px;" valign="top"></p>
+<!-- Table 12 -->
+
+<table border="" class="t11" style="padding-bottom: 0px;">
+	<tbody>
+		<tr>
+			<td style="width:540px;font-weight: bold;">Restbetrag Rechnung</td>
+			<td style="width:100px;text-align:right">$POTENTIALS_AMOUNT$&nbsp;EUR</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="display:block;font-weight:bold;border-bottom: 1px solid #555455;padding: 0px 0;margin-top: 0px;margin-bottom: 5px;padding-bottom: 10px;" valign="top"></p>
+
+<p class="t10">Vielen Dank f&uuml;r Ihre Buchung. Bei R&uuml;ckfragen stehen wir Ihnen gerne zur Verf&uuml;gung.<br />
+Bitte beachten Sie, dass f&uuml;r die Einreise in die Russische F&ouml;deration ein g&uuml;ltiges Visum erforderlich ist!<br />
+Wir empfehlen Ihnen den Abschluss einer Reise-R&uuml;cktrittsversicherung.</p>
+
+<p class="t10">Das Reiseb&uuml;ro weist darauf hin, dass es auf der Grundlage seiner allgemeinen Gesch&auml;ftsbedingungen t&auml;tig ist.<br />
+Diese Gesch&auml;ftsbedingungen liegen im Reiseb&uuml;ro zur jederzeitigen Einsichtnahme und Mitnahme aus oder werden auf Wunsch<br />
+zugesandt.</p>
+
+<p class="t10">Gerichtsstand Hamburg</p>
+
+<p class="t10">Bitte &uuml;berweisen Sie den Rechnungsbetrag an:<br />
+Hamburger Sparkasse &nbsp;&nbsp;KTO 1219 11 64 70 &nbsp;&nbsp;BLZ 200 505 50<br />
+IBAN DE07 2005 0550 1219 1164 70 &nbsp;&nbsp;BIC HASPDEHH &nbsp;&nbsp;SWIFT-Code HASPDEHHXXX</p>
+
+<p class="t10">Mit freundlichen Gr&uuml;&szlig;en<br />
+Ihr Team von AL.EX Reiseservice</p>
+</body>
+</html>
